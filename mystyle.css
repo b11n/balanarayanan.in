@@ -1,0 +1,65 @@
+#base{
+      background-color:black;
+      position:absolute;
+      left:0%;
+      top:0%;
+      height:100%;
+      width:100%;
+     }
+
+
+
+#header {margin: 0 auto;
+position:relative;
+	 top:30%;
+         width:30%;
+         height:30%;
+	 background: url('header.png') center;
+         opacity: 0.3;
+         -webkit-transition: all 0.6s ease;
+	 -moz-transition: all 0.6s ease;
+	 -o-transition: all 0.6s ease;
+	 transition: all 0.6s ease;
+
+}
+#header:hover {
+	
+        opacity: 1;
+        -webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+
+#break {position:relative;
+margin: 0 auto;
+top:40%;
+}
+
+#social {position:relative;
+               top:41%;
+margin-left:60%;
+           list-style: none;
+           padding: 0;
+}
+#social li {
+   float: right;
+}
+#social li a {
+           display:block;
+	
+        opacity: 0.2;
+        -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+        padding: 3px 0;
+}
+#social li a:hover {
+        opacity: 1;
+         -webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}

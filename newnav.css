@@ -1,0 +1,93 @@
+ body{
+  margin:0;
+background:black;
+ }
+#navback{
+		width:100%;
+		height:70px;
+		background:url("images/menu_back.png") ;
+		background-repeat:repeat-x;
+
+		
+}
+
+#navigation  
+{		z-index:2;
+		margin-top:0px;
+		position:absolute;
+		margin-left:150px;
+		
+		  
+}  
+  
+#navigation li{ 
+		float:left;
+		list-style: none;  
+}   
+
+#navigation li a  
+{  
+		background-image:url("images/main_sprite.png");  
+		display:block;
+} 
+
+.home  
+{  
+	background-position:0px 0px;  
+	width:101px;  
+	height:70px;  
+} 
+
+.about{
+	background-position:-337px 0px;
+	width:100px;
+	height:70px;
+}
+
+.contact{background-position:-437px 0px;
+		width:114px;
+		height:70px;
+}
+
+
+#navigation a .hover {  
+    background:url("images/main_sprite.png") no-repeat;  
+    display: block;  
+    opacity: 0;  
+    position: relative;  
+    top: 0;  
+    left: 0;  
+    height: 100%;  
+    width: 100%;  
+    }  
+
+
+
+/*Hover State */
+#navigation a.about .hover {   
+    background-position: -340px -140px; 
+}
+
+
+#navigation a.home .hover {   
+    background-position: 0px -140px; 
+}
+
+#navigation a.contact .hover {   
+    background-position: -441px -140px; 
+}
+
+/*Active State*/
+
+#home .home  { 
+background-position: 0px -70px; 
+z-index: 6; }
+
+#about .about  { 
+background-position: -337px -70px; 
+z-index: 6; }
+
+#contact .contact  { 
+background-position: -437px -70px; 
+z-index: 6; }  
+ 

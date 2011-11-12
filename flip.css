@@ -1,0 +1,36 @@
+
+body {
+	background: #3f3f3f url(images/wood-bg.png);
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.container {top:50%;
+		left:50%;
+	width: 201px; height: 201px;
+	-webkit-perspective: 1000;
+}
+
+.card {
+	width: 201px; height:201px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+}
+.container:hover .card {
+		-webkit-transform: rotateY(180deg);				
+	}
+.face {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+
+.back {
+		width: 201px; height: 201px;
+		-webkit-transform: rotateY(180deg);
+		background-color:white;
+		color:black;
+	}
+
+
+.container:hover .front {
+	z-index: 0;
+} 

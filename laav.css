@@ -1,0 +1,86 @@
+@font-face{ font-family:Neosans;
+            src="fonts/NeoSans.otf";
+            }
+body {
+    font-family:sans-serif; 
+   
+    margin:0;
+}
+
+ 
+#lava {
+    /* you must set it to relative, so that you can use absolute position for children elements */
+    position:absolute; 
+    text-align:center;
+    top:5px;
+    width:100%;
+    height:36px;
+    background-color:#323232;
+
+    
+}
+ 
+#lava ul {
+    /* remove the list style and spaces*/
+    margin:0; 
+    padding:0; 
+    list-style:none; 
+    display:inline;
+    padding-top:8px;
+    color:white;
+    
+    /* position absolute so that z-index can be defined */
+    position:absolute; 
+    
+    /* center the menu, depend on the width of you menu*/
+    left:110px; 
+    top:0; 
+     
+    /* should be higher than #box */
+    z-index:100;
+}
+ul li a{text-decoration:none;
+        color:white;
+        font-size:20px;
+        font-family:neosans; 
+        } 
+#lava ul li {
+     
+    /* give some spaces between the list items */
+    margin:0 15px; 
+    
+    /* display the list item in single row */
+    float:left;
+}
+ 
+#lava #box {
+     
+    /* position absolute so that z-index can be defined and able to move this item using javascript */
+    position:absolute; 
+    top:-2px;
+     
+    /* should be lower than the list menu */
+    z-index:50; 
+ 
+    /* image of the right rounded corner */
+    background:#3f55c4; 
+    height:40px;
+     
+    /* add padding 8px so that the tail would appear */
+    padding-right:8px;
+     
+    /* self-adjust negative margin to make sure the box display in the center of the item */
+    margin-left:-10px;
+    box-shadow: 1px 1px 7px #000000;
+    -moz-box-shadow: 1px 1px 7px #000000;
+    -webkit-box-shadow: 1px 1px 7px #000000;
+}
+ 
+#lava #box .head {
+    /* image of the left rounded corner */
+    background:#3f55c4;
+    height:40px;
+ 
+    /* self-adjust left padding to make sure the box display in the center of the item */
+    padding-left:10px;
+}

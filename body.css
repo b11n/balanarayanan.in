@@ -1,0 +1,80 @@
+body{margin:0;
+   background-image:url(images/pebble.png);
+}
+
+#mainbox{position:relative;
+    width:960px;
+    height:auto;
+    top:30px;
+    margin:0 auto;
+    background-color:rgba(0,0,0,.05);
+}
+
+#logo{
+    float:right;
+    background-image:url(images/conjura12.png);
+    height:80px;
+    width:553px;
+}
+
+
+#slider{position:absolute;
+    top:85px;
+    height:400px;
+    width:940px;
+    margin:0 auto;
+    background-image:url(images/slider.jpg);
+    box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -moz-box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -webkit-box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+
+}
+#news{position:absolute;
+    top:500px;
+    height:200px;
+    width:450px;
+    left:10px;
+    box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -moz-box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -webkit-box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+     background-color:rgba(255,255,255,.8);
+    z-index:3;
+}
+#featured{position:absolute;
+    top:500px;
+    right:10px;
+    height:200px;
+    width:450px;
+    box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -moz-box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -webkit-box-shadow: 1px 1px 15px #3f3f3f,-1px -1px 15px #3f3f3f;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color:rgba(255,255,255,.8);
+    z-index:3;
+
+
+}
+
+footer{position:relative;
+z-index:2;
+    top:760px;
+    width:100% ;
+    height :200px;
+background-color:rgba(203,224,158,1);
+}
+
+#footerbox{position:relative;
+z-index:1 !important;
+     background-image:url(images/tree.png);
+     top:-240px;
+     left:-190px;
+    width:960px;
+    height:440px;
+    margin:0 auto;
+}

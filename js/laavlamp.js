@@ -5,18 +5,18 @@ $(document).ready(function () {
 		var style = 'easeOutElastic';
 
 		//Retrieve the selected item position and width
-		var default_left = Math.round($('#lava li.selected').offset().left - $('#lava').offset().left);
-		var default_width = $('#lava li.selected').width();
+		var default_left = Math.round($('#topnav li.selected').offset().left - $('#topnav').offset().left);
+		var default_width = $('#topnav li.selected').width();
 
 		//Set the floating bar position and width
 		$('#box').css({left: default_left});
 		$('#box .head').css({width: default_width});
 
 		//if mouseover the menu item
-		$('#lava li').hover(function () {
+		$('#topnav li').hover(function () {
 			
 			//Get the position and width of the menu item
-			left = Math.round($(this).offset().left - $('#lava').offset().left);
+			left = Math.round($(this).offset().left - $('#topnav').offset().left);
 			width = $(this).width(); 
 		$('#debug').html(left);
 			//Set the floating bar position, width and transition
@@ -27,7 +27,7 @@ $(document).ready(function () {
 		}).click(function () {
 			
 			//reset the selected item
-			$('#lava li').removeClass('selected');	
+			$('#topnav li').removeClass('selected');	
 			
 			//select the current item
 			$(this).addClass('selected');
@@ -35,11 +35,11 @@ $(document).ready(function () {
 		});
 		
 		//If the mouse leave the menu, reset the floating bar to the selected item
-		$('#lava').mouseleave(function () {
+		$('#topnav').mouseleave(function () {
 
 			//Retrieve the selected item position and width
-			default_left = Math.round($('#lava li.selected').offset().left - $('#lava').offset().left);
-			default_width = $('#lava li.selected').width();
+			default_left = Math.round($('#topnav li.selected').offset().left - $('#topnav').offset().left);
+			default_width = $('#topnav li.selected').width();
 			
 			//Set the floating bar position, width and transition
 			$('#box').stop(false, true).animate({left: default_left},{duration:1500, easing: style});	
@@ -48,4 +48,10 @@ $(document).ready(function () {
 		});
 		
 	});
-	
+	$(function(){
+    $('#topnav li a').onclick(function(){
+        var toShow = '#' + $(this).attr('rel');
+        $('#subnav').show();
+        $(toShow).show();
+    })
+});

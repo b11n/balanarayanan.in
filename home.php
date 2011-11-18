@@ -1,29 +1,25 @@
+
 <!DOCTYPE html>  
   
 <html lang="en">  
 <head>  
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
     <title>Home | Conjura</title>
-        <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/laavlamp.js"></script>
-    <link rel="stylesheet" href="laav.css">
-    <link rel="stylesheet" href="body.css">
+<?php echo $scripts;?>	
+<script type="text/javascript" src="theme/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="theme/js/laavlamp.js"></script>
+
+    <link rel="stylesheet" href="theme/css/laav.css">
+    <link rel="stylesheet" href="theme/css/body.css">
 	
-    <meta property="og:title" content="Conjura | Home" />
-    <meta property="og:description" content="For a Better and greener tomorrw" />
-    <meta property="og:image" content="images/conjura12.png" />
+	<?php // echo $css;
+/*Place all css files under the css folder.. we will remove the old css files*/
+?>
 
 </head>
 <body>
-<div id ="sharebox">
-    <div class="fb"><a name="fb_share"></a> 
-<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
-        type="text/javascript">
-</script></div>
-</div>
-
-  <div id="topnav">
+<div id = "fb-root"></div>
+ <div id="topnav">
 
     <ul>
         <li class="selected"><a href="#">Home</a></li>
@@ -48,6 +44,7 @@
     </ul>
  
     <div id="box"><div class="head"></div></div>
+<div id = "user"></div>
  
 </div>
 
@@ -65,12 +62,12 @@
 <div id="footer">
     <div id="footer960">
 	
-	    <div id="footercontents">Blah blah blah balh</div>
+	    <div id="footercontents"></div>
 	    <div id="footerbox"></div>
 	
     </div>
 </div>
 
-
 </body>  
 </html>  
+

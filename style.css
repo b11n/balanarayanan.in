@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+a, a:active, a:visited{
+	text-decoration:none;
+	color:#FFC;
+}
+ul{
+	list-style:none;
+}
+body{
+	background-color:#000;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#mainwrapper{
+	background:url(bg2.jpg) #427B37 center top fixed repeat;
+}
+
+#main{	
+
+}
+	#headerwrapper{
+		margin:5px auto 5px;
+		width:960px;
+		border-radius:15px 15px 0 0;
+		background-color:rgba(200,200,200,.3);
+	}
+		#header{
+			/*background:url(smleafy.png) right top no-repeat;*/
+			height:150px;
+		}
+			#nav{
+				background-color:rgba(50,50,50,.4);
+				border-radius:15px 0 15px 0;
+				width:380px;
+				padding-top:10px;
+				padding-bottom:10px;
+			}
+				#nav ul{
+					list-style:none;
+					margin-left:15px;
+					font-family:Verdana, Geneva, sans-serif;
+					font-size:14px;
+				}
+					#nav ul li{
+						float:left;
+						margin-right:20px;
+					}
+						#nav ul li a:hover{
+							color:#FF8000;
+						}
+			#capt{
+				width:400px;
+				height:100px;
+				background-image:url(capt.png);
+			}
+	#contentwrapper{
+		width:960px;
+		margin:5px auto 5px;
+		background-color:rgba(20,20,20,.3);
+	}
+		#content{
+			padding:10px;
+		}
+			#data{
+				background-color:#FFF;
+				width:80%;
+				float:left;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-size:12px;
+			}
+				#data p{
+					padding:10px;
+					text-align:justify;
+				}
+				#data img{
+					margin:5px;
+				}
+			#sidebar{
+				width:20%;
+				float:right;
+				min-height:100px;
+			}
+				#sidebar h4{
+					color:#399;
+					margin:10px;
+				}
+				#sidebar ul{
+					padding-left:10px;
+				}
+					#sidebar ul li{
+						margin:5px 0 5px;
+						font-size:13px;
+					}
+	#footerwrapper{
+		margin:10px 0 0;
+		background-color:rgba(0,0,0,.4);
+		border-top:#000 solid 2px;
+	}
+		#footer{
+			width:960px;
+			margin:auto;			
+		}
+		.footerfloat{
+			float:left;
+			height:100px;
+		}
+			#left{
+				text-align:left;
+			}
+				#left ul li{
+					margin:10px;
+					font-size:12px;
+				}
+			#middle{
+				text-align:center;
+			}
+				#middle h4{
+					margin-top:20px;
+					font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+				}
+				#middle p{
+					font-family:Tahoma, Geneva, sans-serif;
+					font-size:12px;
+					color:#CCC;
+				}
+			#right{
+				text-align:right;
+			}
+				#right ul li{
+					margin:10px;
+					font-size:12px;
+				}
+		
+.cleardiv
+{
+	clear:both;
+}
+
+#datanav{
+	background-color:rgba(100,100,100,.5);
+}
+	#datanav .floaters{
+		float:left;
+		height:100px;
+		width:100px;
+		margin:15px 42px 15px;
+		border-radius:10px;
+		cursor:pointer;
+	}

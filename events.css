@@ -16,6 +16,19 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 	background: rgba(0,200,0,.1);
 	text-align:center;
 	
+	
+	}
+	
+#eventdetails {position:relative;
+	width: 740px;
+	float:right;
+	-moz-border-radius: 10px 10px 10px 10px ;
+	border-radius: 10px 10px 10px 10px ;
+	height:500px;
+	background: rgba(0,0,0,.5);
+	text-align:center;
+	
+	
 	}
 
 .accordionButton {color:white;	
@@ -27,6 +40,8 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 	-moz-border-radius: 10px 10px 10px 10px ;
 	border-radius: 10px 10px 10px 10px ;
 	font-family:neosans;
+	text-size:20px;
+	-webkit-transition:all .5s ease;
 	}
 	
 .accordionContent {	color:white;	
@@ -34,8 +49,8 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 	float: left;
 	_float: none; /* Float works in all browsers but IE6 */
 	background: rgba(0,0,0,.4);
-	-moz-border-radius: 0px 0px 0px 0px ;
-	border-radius: 0px 0px 0px 0px ;
+	-moz-border-radius: 0px 0px 10px 10px ;
+	border-radius: 0px 0px 10px 10px ;
 	}
 	
 /***********************************************************************************************************************
@@ -44,11 +59,76 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 
 .on {
 	background: #f4ca66;
-	-moz-border-radius: 10px 0px 0px 0px ;
+	-moz-border-radius: 10px 10px 0px 0px ;
 	border-radius: 10px 10px 0px 0px ;
+	-webkit-transition:all .2s ease;
 	}
 	
-.over {
+.over { -webkit-transition:all .2s ease;
 	background: #366f5a;
 	}
+
+.invertedshiftdown2{-moz-border-radius: 5px 5px 5px 5px ;
+	border-radius: 0px 10px 10px 10px ;}
+	
+.invertedshiftdown2 ul:nth-child(1) a{border-radius: 10px 10px 0px 0px ;}
+	
+.invertedshiftdown2{position:absolute;
+top:40px;
+left:70px;
+padding: 0;
+height:200px;
+width: 600px;
+background:  white;
+border:2px solid black;
+}
+
+.invertedshiftdown2 ul{
+position:absolute;
+top:-32px;
+
+margin:0;
+margin-left: 0px; /*margin between first menu item and left browser edge*/
+padding: 0;
+list-style: none;
+}
+
+.invertedshiftdown2 li{
+display: inline;
+margin: 0 2px 0 0;
+padding: 0;
+text-transform:uppercase;
+}
+
+.invertedshiftdown2 a{
+float: left;
+display: block;
+font: bold 12px Arial;
+color: black;
+text-decoration: none;
+margin: 0 1px 0 0; /*Margin between each menu item*/
+padding: 5px 10px 0px 10px; /*Padding within each menu item*/
+background-color: lightblue; /*Default menu color*/
+border-bottom: 8px solid white;
+}
+
+.invertedshiftdown2 .overtab{
+background-color: #D10800; /*Highlight red color theme*/
+padding-top: 10px; /*Set padding-top value to default's padding-top + padding-bottom */
+padding-bottom: 0; /*Set padding-bottom value to 0 */
+border-bottom-color: #D10000; /*Highlight red color theme*/
+color: white;
+}
+
+.current a{ /** currently selected menu item **/
+background-color: #A10000; /*Highlight red color theme*/
+padding-top: 10px; /*Set padding-top value to default's padding-top + padding-bottom */
+padding-bottom: 0; /*Set padding-bottom value to 0 */
+border-bottom-color: #D10000; /*Highlight red color theme*/
+color: white;
+}
+
+
+
+
 	
